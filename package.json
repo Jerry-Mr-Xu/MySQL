@@ -1,0 +1,23 @@
+{
+    "name": "mysql-test",
+    "version": "0.1.0",
+    "description": "Hello mysql example",
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "keywords": [
+        "koa",
+        "mysql"
+    ],
+    "author": "Jerry",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jerry-Mr-Xu/KoaTest"
+    },
+    "dependencies": {
+        "sequelize": "4.31.2",
+        "mysql2": "1.5.1"
+    }
+}
