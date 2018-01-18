@@ -9,6 +9,11 @@ var studentModel = {
         age: Sequelize.INTEGER,
         gender: Sequelize.BOOLEAN,
         height: Sequelize.INTEGER
+    },
+    hooks: {
+        beforeUpdate: (record) => {
+            record.age++;
+        }
     }
 };
 

@@ -38,9 +38,9 @@ var getAllModels = () => {
     // 动态导入所有model文件
     modelFiles.forEach(modelFile => {
         // 获取model类
-        let Model = require(`${__dirname}\\${modelFile}`);
+        let modelWithName = require(`${__dirname}\\${modelFile}`);
         // 获取对应的model并放入Map中
-        models.set(Model.name, Factory.packModel(Model.name, Model.model, sequelize));
+        models.set(modelWithName.name, Factory.packModel(modelWithName, sequelize));
     });
 
     return models;

@@ -10,6 +10,5 @@ var Student = modelManager.getModel('student');
             name: 'jerry'
         }
     })
-    jerry.age = 20;
     await jerry.save();
 })();
