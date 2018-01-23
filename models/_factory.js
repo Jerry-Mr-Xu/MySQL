@@ -18,6 +18,17 @@ var Factory = {
             record.updatedAt = now;
             record.version = 0;
             console.log('UPDATE');
+        },
+        beforeValidate: (record) => {
+            if (!record.createdAt) {
+                record.createdAt = 0;
+            }
+            if (!record.updatedAt) {
+                record.updatedAt = 0;
+            }
+            if (!record.version) {
+                record.version = 0;
+            }
         }
     },
 
